@@ -1,0 +1,19 @@
+// /api/gemini.js
+import { Client } from 'google-genai'
+
+const client = new Client({
+  api_key: process.env.GEMINI_API_KEY  // Vercel environment variable
+})
+
+export default async function handler(req, res) {
+  try {
+    const { prompt } = req.body
+    const response = await client.generate({
+      model: "gemini-flash-latest",
+      contents: [{ role: "user", parts: [prompt] }]
+    })
+    res.status(200).json(response)
+  } catch (error) {
+    res.status(500).json({ error: error.message })
+  }
+}
