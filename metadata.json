@@ -1,0 +1,8 @@
+{
+  "name": "CleanCity AI",
+  "description": "An AI-powered urban waste management platform that helps citizens report waste and authorities prioritize cleanups using computer vision and intelligent analysis.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}
