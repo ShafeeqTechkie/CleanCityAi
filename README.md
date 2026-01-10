@@ -1,6 +1,6 @@
 # CleanCityAI
 
-This project is deployed live at: [Demo Link](https://clean-city-ai.vercel.app/)
+This project is deployed live at: [Link](https://clean-city-ai.vercel.app/)
 
 ## Run Locally
 
